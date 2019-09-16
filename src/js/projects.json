@@ -1,0 +1,38 @@
+[
+    {
+        "key": 1,
+        "title": "Project 1",
+        "description": "A project that jsldhfsl sldkh slf sdlfhlfh lshf dslfh lhf sdlfhds slkhf dslkfhds lfkdhs fldskh dslh",
+        "github": "",
+        "hosted": "",
+        "image": "../assets/me-face.png",
+        "isVisible": false
+    },
+    {
+        "key": 2,
+        "title": "Project 2",
+        "description": "",
+        "github": "",
+        "hosted": "",
+        "image": "../assets/me-face.png",
+        "isVisible": false
+    },
+    {
+        "key": 3,
+        "title": "Project 3",
+        "description": "",
+        "github": "",
+        "hosted": "",
+        "image": "../assets/me-face.png",
+        "isVisible": false
+    },
+    {
+        "key": 4,
+        "title": "Project 4",
+        "description": "",
+        "github": "",
+        "hosted": "",
+        "image": "../assets/me-face.png",
+        "isVisible": false
+    }
+]
