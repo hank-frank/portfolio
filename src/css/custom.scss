@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'geomanistregular';
     src: url('../assets/geomanist-regular-webfont.woff2') format('woff2'),
@@ -19,6 +20,19 @@ $geo-light: 'geomanistlight', sans-serif;
 $serif: 'Glegoo', serif;
 
 
+$wrap-break: 768px;
+
+@mixin mobile {
+    @media (max-width: $wrap-break) {
+      @content;
+    }
+  }
+
+@mixin web {
+    @media (max-width: $wrap-break + 1) {
+        @content;
+    }
+}
 
 body {
     margin: 0;
@@ -34,14 +48,14 @@ body {
 }
 
 .portrait-img {
-    width: 35vw;
-    height: 35vw;
+    width: 30vw;
+    height: 30vw;
 }
 
 .name-text {
     text-align: center;
     font-family: $serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: grey;
 }
 
@@ -63,7 +77,7 @@ body {
 .card {
     width: 140px;
     height: 200px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: grey;
     margin: 4vh 2vw;
     display: flex;
@@ -96,31 +110,132 @@ body {
 .project-info-container {
     width: 100vw;
     background-color: grey;
-    height: 300px;
+    height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    ;
+
+    @include mobile {
+    
+        // flex-direction: row-reverse;
+    }
 }
 
+.image-container {
+    height: 100%;
+    width: 40%;
+    z-index: 9;
+}
+
+// .carousel {
+//     width: 40%;
+//     height: 100%
+// }
 .project-image {
     height: 100%;
 }
 
 .project-title-container {
     width: 60%;
+    margin: 5hv 5vw;
+    text-align: center;
 }
 
 .project-title {
     font-family: $serif;
     font-size: 2rem;
     color: white;
+    margin: 10vh 5vw;
 }
 
 .project-description {
     font-family: $geo-light;
-    font-size: .8rem;
+    font-size: 1rem;
     color: white;
+    margin: 5vh 5vw;
 }
 
+.link-flex {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
 
+}
+
+.link-button {
+    width: 15vw;
+    height: 5vh;
+    background-color: white;
+    color: gray;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+
+}
+
+//slideshow
+// .image-slide {
+//     width: 400px;
+//     height: 400px;
+// }
+
+.slide-arrow {
+    color: red;
+}
+
+.left {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: 10;
+}
+
+.right {
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
+.slide-wrapper {
+    position: relative;
+    height: 600px;
+    width: 400px;
+}
+
+.carousel {
+    position: relative;
+    width: 60vw;
+    margin: 0 auto;
+    height: 50vh;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.image-slide {
+    margin: 0;
+}
+
+.image-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.carousel-image {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 50vh;
+    top: 5vh;
+    // left: 0;
+    // position: relative;
+    
+}
+
+.image-spacer {
+    flex-grow: 1;
+}
 

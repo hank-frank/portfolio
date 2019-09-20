@@ -1,11 +1,15 @@
 [
     {
         "key": 1,
-        "title": "Project 1",
-        "description": "A project that jsldhfsl sldkh slf sdlfhlfh lshf dslfh lhf sdlfhds slkhf dslkfhds lfkdhs fldskh dslh",
+        "title": "Creating Coding Careers",
+        "description": "A React site created for Creating Coding Careers non-profit. ",
         "github": "",
         "hosted": "",
-        "image": "../assets/me-face.png",
+        "images":[
+            "../assets/CCC-1.png",
+            "../assets/CCC-1.png",
+            "../assets/CCC-2.png"
+        ],
         "isVisible": false
     },
     {
@@ -14,7 +18,9 @@
         "description": "",
         "github": "",
         "hosted": "",
-        "image": "../assets/me-face.png",
+        "images": [
+            
+        ],
         "isVisible": false
     },
     {
@@ -23,7 +29,9 @@
         "description": "",
         "github": "",
         "hosted": "",
-        "image": "../assets/me-face.png",
+        "images": [
+            
+        ],
         "isVisible": false
     },
     {
@@ -32,7 +40,20 @@
         "description": "",
         "github": "",
         "hosted": "",
-        "image": "../assets/me-face.png",
+        "images": [
+            
+        ],
+        "isVisible": false
+    },
+    {
+        "key": 5,
+        "title": "Project 5",
+        "description": "",
+        "github": "",
+        "hosted": "",
+        "images": [
+            
+        ],
         "isVisible": false
     }
 ]

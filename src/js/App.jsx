@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import Carousel from './carousel.jsx'
+
+// let images = require('../assets/site-images/CCC-1.png')
+// let images1 = require('../assets/site-images/CCC-2.png')
 let projectData = require('./projects.json')
 
 class App extends Component {
@@ -10,14 +14,15 @@ class App extends Component {
 
         this.state = {
             projectsArray: projectData,
+            modalIsOpen: false
         };
 
         this.visibilityWatcher = this.visibilityWatcher.bind(this);
         this.makeVisible = this.makeVisible.bind(this);
     }
 
+
     makeVisible (eachKey) {
-        console.log(`each key: `, eachKey)
         let projects = this.state.projectsArray
         for (let i = 0; i < projects.length; i++) {
             if (projects[i].key === eachKey) {
@@ -75,13 +80,23 @@ class App extends Component {
                 <div>
                 {
                     this.state.projectsArray.map((each) => {
-                        return   <div key={ each.key } onClick={() => this.hideVisibility(each.key)}>
-                                    <div className="project-info-container" style={{ display: this.visibilityWatcher(each.isVisible)}}>
-                                        <img className="project-image" src={ require( each.image ) }/>
+                    return      <div key={ each.key } >
+                                    <div className="project-visibility-container" style={{ display: this.visibilityWatcher(each.isVisible)}}>
+                                    <div className="project-info-container">
+                                        {/* <div className="image-container"> */}
+                                       <Carousel 
+                                       images={ each.images }
+                                       />
+                                        {/* </div> */}
                                         <div className="project-title-container">
-                                            <h4 className="project-title">{ each.title }</h4>
+                                            <h4 className="project-title" onClick={() => this.hideVisibility(each.key)}>{ each.title }</h4>
                                             <p className="project-description">{ each.description }</p>
+                                            <div className="link-flex">
+                                                <a className="link-button">Github</a>
+                                                <a className="link-button">Heroku</a>
+                                            </div>
                                         </div>
+                                    </div>
                                     </div>
                                 </div>
                     })
