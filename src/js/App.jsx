@@ -83,11 +83,6 @@ class App extends Component {
                     return      <div key={ each.key } >
                                     <div className="project-visibility-container" style={{ display: this.visibilityWatcher(each.isVisible)}}>
                                     <div className="project-info-container">
-                                        {/* <div className="image-container"> */}
-                                       <Carousel 
-                                       images={ each.images }
-                                       />
-                                        {/* </div> */}
                                         <div className="project-title-container">
                                             <h4 className="project-title" onClick={() => this.hideVisibility(each.key)}>{ each.title }</h4>
                                             <p className="project-description">{ each.description }</p>
@@ -96,6 +91,13 @@ class App extends Component {
                                                 <a className="link-button">Heroku</a>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div className="image-flex-container">
+                                        {
+                                            each.images.map((image) => {
+                                               return <img src={image} className="each-image"/>
+                                            })
+                                        }
                                     </div>
                                     </div>
                                 </div>
