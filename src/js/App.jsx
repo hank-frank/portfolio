@@ -98,7 +98,7 @@ class App extends Component {
                                                return <img src={image} className="each-image"/>
                                             })
                                         }
-                                    </div>
+                                        </div>
                                     </div>
                                 </div>
                     })
