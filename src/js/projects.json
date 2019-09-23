@@ -2,7 +2,7 @@
     {
         "key": 1,
         "title": "CCC",
-        "description": "A React site created for Creating Coding Careers non-profit. ",
+        "description": "A React site created for the Creating Coding Careers, a non-profit in San Diego. I contributed the design and layout, created the wireframe, the responsive navigation bar, the SVG images that serve as transitions between sections, the mobile vs. web sizing and formatrting, and accessabilty.",
         "github": "",
         "hosted": "",
         "images":[
@@ -14,8 +14,8 @@
     },
     {
         "key": 2,
-        "title": "Project 2",
-        "description": "",
+        "title": "test",
+        "description": "description falkjfhds kjfhsad lkfjh ",
         "github": "",
         "hosted": "",
         "images": [

@@ -18,6 +18,12 @@
 $geo: 'geomanistregular', sans-serif;
 $geo-light: 'geomanistlight', sans-serif;
 $serif: 'Glegoo', serif;
+$dark: #193E72;
+$med: #254C84;
+$light: #2F6FA5;
+$ltgrey: #E0E0E0;
+$shadow: #1d1d1d;
+$dkgrey: rgb(158, 158, 158);;
 
 
 $wrap-break: 768px;
@@ -39,6 +45,43 @@ body {
     padding: 0;
 }
 
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 2vh 0 0 2vw;
+
+    > div {
+        width: 30px;
+        height: 30px;
+        // background-color: $dkgrey;
+        align-self: center;
+        margin: 1vh 1vw;
+    }
+}
+
+.each-contact {
+    // width: 30px;
+    // height: 30px;
+    // background-color: $dkgrey;
+    // margin: 1vh 1vw;
+    justify-content: center;
+}
+
+.linkedin {
+    width: 100%;
+    color: $dkgrey;
+    font-size: 1.8rem;
+}
+
+.email {
+    width: 100%;
+    color: $dkgrey;
+    font-size: 1.8rem;
+}
+
 .flex-container-vertical {
     display: flex;
     flex-direction: column;
@@ -57,11 +100,12 @@ body {
     font-family: $serif;
     font-size: 2.5rem;
     color: grey;
+    width: 85vw;
+    line-height: 1.2;
 }
 
 #henry {
-    color: blue;
-    font-family: $geo;
+    color: $med;
 }
 
 .flex-container-row {
@@ -78,16 +122,21 @@ body {
     width: 140px;
     height: 200px;
     border-radius: 10px;
-    background-color: grey;
+    background-color: $dark;
     margin: 4vh 2vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
+
+    @include mobile {
+        width: 90px;
+        height: 130px;
+    }
 }
 
 .card-circle {
-    background-color: white;
+    background-color: $ltgrey;
     border-radius: 50%;
     width: 110px;
     height: 110px;
@@ -98,18 +147,33 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include mobile {
+        width: 80px;
+        height: 80px;
+        margin: 0px 5px;
+    }
+}
+
+.card-circle:hover {
+    background-color: white;
+   
 }
 
 .title {
     font-family: $geo;
     font-size: 1rem;
-    color: grey;
+    color: $dark;
+
+    @include mobile {
+        font-size: .8rem;
+    }
 
 }
 
 .project-info-container {
     width: 100vw;
-    background-color: grey;
+    // background-color: grey;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -120,6 +184,14 @@ body {
     
         // flex-direction: row-reverse;
     }
+}
+
+.x {
+    color: $ltgrey;
+    font-size: 4rem;
+    right: 0;
+    margin: 10px 10px 0 0;
+    position: absolute;
 }
 
 .image-container {
@@ -133,19 +205,20 @@ body {
 }
 
 .project-title-container {
-    width: 60%;
+    width: 80%;
     margin: 5hv 5vw;
     text-align: center;
 }
 
 .project-title {
     font-family: $serif;
-    font-size: 2rem;
-    color: white;
+    font-size: 4rem;
+    color: $ltgrey;
     margin: 2vh 5vw;
 
     @include mobile {
         margin: 1vh 2vw;
+        font-size: 2rem;
     }
 }
 
@@ -170,8 +243,8 @@ justify-content: space-evenly;
 .link-button {
     width: 15vw;
     height: 5vh;
-    background-color: white;
-    color: gray;
+    background-color: $ltgrey;
+    color: $med;
     border-radius: 10px;
     text-align: center;
     display: flex;
@@ -179,12 +252,18 @@ justify-content: space-evenly;
     justify-content: center;
 }
 
+.link-button:hover {
+    background-color: white;
+    color: $dark;
+   
+}
+
 .image-flex-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 3vh 0px;
-    background-color: grey;
+    // background-color: grey;
     max-width: 100vw;
     flex-wrap: wrap;
     
@@ -206,73 +285,16 @@ justify-content: space-evenly;
     }
 }
 
-.project-visibility-container {
+.project-visibility-container:nth-of-type(2n) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: grey;
-
+    background-color: $med;
 }
 
-//slideshow
-// .image-slide {
-//     width: 400px;
-//     height: 400px;
-// }
-
-// .slide-arrow {
-//     color: red;
-// }
-
-// .left {
-//     position: absolute;
-//     top: 40%;
-//     left: 0;
-//     z-index: 10;
-// }
-
-// .right {
-//     position: absolute;
-//     top: 40%;
-//     right: 0;
-// }
-
-// .slide-wrapper {
-//     position: relative;
-//     height: 600px;
-//     width: 400px;
-// }
-
-// .carousel {
-//     position: relative;
-//     width: 60vw;
-//     margin: 0 auto;
-//     height: 50vh;
-//     overflow: hidden;
-//     white-space: nowrap;
-// }
-
-// .image-slide {
-//     margin: 0;
-// }
-
-// .image-flex {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-content: center;
-// }
-
-// .carousel-image {
-//     max-width: 100%;
-//     max-height: 100%;
-//     margin-bottom: 50vh;
-//     top: 5vh;
-//     // left: 0;
-//     // position: relative;
-    
-// }
-
-// .image-spacer {
-//     flex-grow: 1;
-// }
+.project-visibility-container:nth-of-type(2n-1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $light;
+}
