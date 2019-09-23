@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaEnvelopeSquare } from 'react-icons/fa';
 import { FaWindowClose } from 'react-icons/fa';
+import { FaGithubSquare } from 'react-icons/fa';
 
 // let images = require('../assets/site-images/CCC-1.png')
 // let images1 = require('../assets/site-images/CCC-2.png')
@@ -57,10 +58,9 @@ class App extends Component {
             <>
                 <div className="contact-container">
                     <div className="each-contact"><a href="https://www.linkedin.com" target="_blank" title="LinkedIn" className="linkedin" ><FaLinkedinIn /></a></div>
-                    <div className="each-contact"><a href="https://www.linkedin.com" target="_blank" title="email" className="email" ><FaEnvelopeSquare /></a></div>
-                    <div className="each-contact"></div>
-                    <div className="each-contact"></div>
-                    <div className="each-contact"></div>
+                    <div className="each-contact"><a href="mailto:henryfrank@gmail.com" target="_blank" title="email" className="email" ><FaEnvelopeSquare /></a></div>
+                    <div className="each-contact"><a href="https://github.com/hank-frank?tab=repositories" target="_blank" title="github-top" className="github-top" ><FaGithubSquare /></a></div>
+                    <div className="each-contact"><a href="https://drive.google.com/file/d/12N6DJF6WKAJfbeHAyPyPtE8tRkv8fFHv/view?usp=sharing" target="_blank" title="resume" className="resume" >Resume</a></div>
                 </div>
                 <div className="flex-container-vertical">
                     <img src={require("../assets/me-face.png")} className="portrait-img"/>
@@ -89,8 +89,8 @@ class App extends Component {
                                             <h4 className="project-title" >{ each.title }</h4>
                                             <p className="project-description">{ each.description }</p>
                                             <div className="link-flex">
-                                                <a className="link-button">Github</a>
-                                                <a className="link-button">Heroku</a>
+                                                <a href={ each.github } target="_blank" className="link-button" >Github</a>
+                                                <a href={ each.hosted } target="_blank" className="link-button">View Site</a>
                                             </div>
                                         </div>
                                     </div>

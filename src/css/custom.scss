@@ -74,12 +74,26 @@ body {
     width: 100%;
     color: $dkgrey;
     font-size: 1.8rem;
+    cursor: pointer;
 }
 
 .email {
     width: 100%;
     color: $dkgrey;
     font-size: 1.8rem;
+}
+
+.github-top {
+    width: 100%;
+    color: $dkgrey;
+    font-size: 1.8rem;
+}
+
+.resume {
+    font-family: $geo;
+    font-size: 1rem;
+    color: $dkgrey;
+    text-decoration: none;
 }
 
 .flex-container-vertical {
@@ -192,6 +206,14 @@ body {
     right: 0;
     margin: 10px 10px 0 0;
     position: absolute;
+
+    @include mobile {
+        font-size: 2rem;
+    }
+}
+
+.x:hover {
+    color: white;
 }
 
 .image-container {
@@ -250,6 +272,14 @@ justify-content: space-evenly;
     display: flex;
     flex-direction: column; 
     justify-content: center;
+    font-family: $geo;
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+
+    @include mobile {
+        font-size: 1rem;
+    }
 }
 
 .link-button:hover {
