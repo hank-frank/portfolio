@@ -14,21 +14,21 @@
     },
     {
         "key": 2,
-        "title": "More",
-        "description": "description falkjfhds kjfhsad lkfjh ",
-        "github": "",
-        "hosted": "",
+        "title": "Weather",
+        "description": "A React/Redux/Bootstrap weather app. It hits the Open Weather API and allows the user to search by city for weather information. It locally caches the search history.",
+        "github": "https://github.com/hank-frank/react200-weather-app",
+        "hosted": "https://hf-weather-app.herokuapp.com/",
         "images": [
-            
+            "../assets/weather.png"
         ],
         "isVisible": false
     },
     {
         "key": 3,
-        "title": "content",
-        "description": "",
-        "github": "",
-        "hosted": "",
+        "title": "To Do",
+        "description": "A React to-do app. It uses Bootstrap",
+        "github": "https://github.com/hank-frank/react-100-vstda",
+        "hosted": "https://hf-reac100t-vstda.herokuapp.com/#",
         "images": [
             
         ],
@@ -36,21 +36,22 @@
     },
     {
         "key": 4,
-        "title": "to",
-        "description": "",
+        "title": "YLD",
+        "description": "A login portal for Yellow Line Digtial Marketing. As a team we implimented single sign on through One-Login, Loopback and MongoDB. After implimenting the new login we migrated the full functionality of their customer facing site ensuring all functionality. I ensured that with a successful login pertanent customer or admin information is passed from server to client side for user dependant site rendering and adjusted role based permissions to allow only admins to create and delete users.",
         "github": "",
         "hosted": "",
         "images": [
-            
+            "../assets/yld.png",
+            "../assets/yld.png"
         ],
         "isVisible": false
     },
     {
         "key": 5,
-        "title": "Come.",
-        "description": "",
-        "github": "",
-        "hosted": "",
+        "title": "Hair",
+        "description": "A static display site for Hairstylist Sarah Vaughan. It has links to her booking platforn, imbeded maps, photos of her work and descriptions of her services. It is mobile responsive using Sass, media queries and flex-box.",
+        "github": "https://github.com/hank-frank/sarah-site",
+        "hosted": "https://sarah-vaughan.herokuapp.com/",
         "images": [
             
         ],

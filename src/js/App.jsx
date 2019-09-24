@@ -89,8 +89,8 @@ class App extends Component {
                                             <h4 className="project-title" >{ each.title }</h4>
                                             <p className="project-description">{ each.description }</p>
                                             <div className="link-flex">
-                                                <a href={ each.github } target="_blank" className="link-button" >Github</a>
-                                                <a href={ each.hosted } target="_blank" className="link-button">View Site</a>
+                                                {each.github ? <a href={ each.github } target="_blank" className="link-button" >Github</a> : "" }
+                                                { each.hosted ? <a href={ each.hosted } target="_blank" className="link-button">View Site</a> : "" }
                                             </div>
                                         </div>
                                     </div>
