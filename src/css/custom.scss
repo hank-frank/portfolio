@@ -116,6 +116,11 @@ body {
     color: grey;
     width: 85vw;
     line-height: 1.2;
+
+    @include mobile {
+        font-size: 1.8rem;
+        width: 60vw;
+    }
 }
 
 #henry {
