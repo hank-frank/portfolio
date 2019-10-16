@@ -14,12 +14,13 @@
     },
     {
         "key": 2,
-        "title": "Weather",
-        "description": "A React/Redux/Bootstrap weather app. It hits the Open Weather API and allows the user to search by city for weather information. It locally caches the search history.",
-        "github": "https://github.com/hank-frank/react200-weather-app",
-        "hosted": "https://hf-weather-app.herokuapp.com/",
+        "title": "Hacker News",
+        "description": "A React/hooks site using the Hacker News API to build a basic custom Hacker News reader. It uses async/await and promise.all to handle the async calls and Sass(scss) to do the styling.  ",
+        "github": "https://github.com/hank-frank/hacker-news-reader",
+        "hosted": "https://hf-hacker-news.herokuapp.com",
         "images": [
-            "../assets/weather.png"
+            "../assets/hacker1.png",
+            "../assets/hacker2.png"
         ],
         "isVisible": false
     },
@@ -54,6 +55,17 @@
         "hosted": "https://sarah-vaughan.herokuapp.com/",
         "images": [
             
+        ],
+        "isVisible": false
+    },
+    {
+        "key": 6,
+        "title": "Weather",
+        "description": "A React/Redux/Bootstrap weather app. It hits the Open Weather API and allows the user to search by city for weather information. It locally caches the search history.",
+        "github": "https://github.com/hank-frank/react200-weather-app",
+        "hosted": "https://hf-weather-app.herokuapp.com/",
+        "images": [
+            "../assets/weather.png"
         ],
         "isVisible": false
     }
