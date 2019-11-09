@@ -6,9 +6,14 @@
         "github": "",
         "hosted": "https://www.creatingcodingcareers.org/", 
         "images":[
-            "../assets/CCC-1.png",
-            "../assets/CCC-1.png",
-            "../assets/CCC-2.png"
+            {
+                "image": "../assets/CCC-1.png",
+                "key": 1
+            },
+            {
+                "image": "../assets/CCC-2.png",
+                "key": 2
+            }
         ],
         "isVisible": false
     },
@@ -19,8 +24,14 @@
         "github": "https://github.com/hank-frank/hacker-news-reader",
         "hosted": "https://hf-hacker-news.herokuapp.com",
         "images": [
-            "../assets/hacker1.png",
-            "../assets/hacker2.png"
+            {
+                "image": "../assets/hacker1.png",
+                "key": 1
+            },
+            {
+                "image": "../assets/hacker2.png",
+                "key": 2
+            }
         ],
         "isVisible": false
     },
@@ -42,8 +53,10 @@
         "github": "",
         "hosted": "",
         "images": [
-            "../assets/yld.png",
-            "../assets/yld.png"
+            {
+                "image": "../assets/yld.png",
+                "key": 1
+            }
         ],
         "isVisible": false
     },
@@ -65,7 +78,10 @@
         "github": "https://github.com/hank-frank/react200-weather-app",
         "hosted": "https://hf-weather-app.herokuapp.com/",
         "images": [
-            "../assets/weather.png"
+            {
+            "image": "../assets/weather.png",
+            "key": 1
+        }
         ],
         "isVisible": false
     }

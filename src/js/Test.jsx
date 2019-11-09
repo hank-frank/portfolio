@@ -14,51 +14,54 @@ class App extends Component {
 
         this.state = {
             projectsArray: projectData,
-            modalIsOpen: false
+            modalIsOpen: false,
+            visibleArray: []
         };
 
-        this.visibilityWatcher = this.visibilityWatcher.bind(this);
         this.makeVisible = this.makeVisible.bind(this);
+        this.hideVisibility = this.hideVisibility.bind(this);
         this.ref1 = React.createRef();
         this.ref2 = React.createRef();
         this.ref3 = React.createRef();
         this.ref4 = React.createRef();
         this.ref5 = React.createRef();
         this.ref6 = React.createRef();
-        this.ref7 = React.createRef();
     }
 
     componentDidMount () {
         let incr = 0;
-        let refArray = [this.ref1, this.ref2, this.ref3, this.ref4, this.ref5, this.ref6, this.ref7];
+        let refArray = [this.ref1, this.ref2, this.ref3, this.ref4, this.ref5, this.ref6];
         projectData.forEach((each) => {
             each.ref = refArray[incr];
             incr++;
         })
-        console.log(`peoject Data: `, projectData);
     }
 
     makeVisible (eachKey, eachRef) {
-        let projects = this.state.projectsArray
+        let projects = this.state.projectsArray;
+        let visible = this.state.visibleArray;
         for (let i = 0; i < projects.length; i++) {
+            
             if (projects[i].key === eachKey) {
                 projects[i].isVisible = true;
-
+                visible.push(projects[i]);
             }
             this.setState({
-                projectsArray: projects
+                projectsArray: projects,
+                visibleArray: visible
             })
         }
+
         window.scrollTo({
             top: eachRef.current,
             left: 0,
             behavior: 'smooth'
         });
-        console.log(`eachRef: `, eachRef)
     }
 
     hideVisibility(eachKey) {
-        let projects = this.state.projectsArray
+        let projects = this.state.projectsArray;
+        let visible = this.state.visibleArray;
         for (let i = 0; i < projects.length; i++) {
             if (projects[i].key === eachKey) {
                 projects[i].isVisible = false
@@ -67,15 +70,23 @@ class App extends Component {
                 projectsArray: projects
             })
         }
-    }
-
-    visibilityWatcher (status) {
-        if (status === false) {
-            return "none"
-        } else if (status === true) {
-            return "block"
+        for (let j = 0; j < visible.length; j++) {
+            if (visible[j].key === eachKey) {
+                visible.splice(j, 1)
+            }
+            this.setState({
+                visibleArray: visible
+            })        
         }
     }
+
+    // visibilityWatcher (status) {
+    //     if (status === false) {
+    //         return "none"
+    //     } else if (status === true) {
+    //         return "block"
+    //     }
+    // }
 
     render () {
         return (
@@ -105,8 +116,8 @@ class App extends Component {
                 }
                 </div>
                 {
-                    this.state.projectsArray.map((each) => {
-                    return         <div className={ `project-visibility-container ${ each.key }`} key={ each.key } style={{ display: this.visibilityWatcher(each.isVisible) }} ref={ each.ref }>
+                    this.state.visibleArray.map((each) => {
+                    return         <div className="project-visibility-container" id={ each.key } key={ each.key } ref={ each.ref }>
                                     <FaWindowClose className="x" onClick={() => this.hideVisibility(each.key) }/>
                                     <div className="project-info-container">
                                         <div className="project-title-container">
@@ -120,8 +131,8 @@ class App extends Component {
                                     </div>
                                     <div className="image-flex-container">
                                         {
-                                            each.images.map((image) => {
-                                                return <img src={ image } className="each-image"/>
+                                            each.images.map((eachImage) => {
+                                                return <img src={ eachImage.image } key={ eachImage.key } className="each-image"/>
                                             })
                                         }
                                         </div>

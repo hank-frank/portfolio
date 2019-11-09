@@ -50,8 +50,8 @@ body {
     flex-direction: column;
     position: fixed;
     top: 0;
-    left: 0;
-    margin: 2vh 0 0 2vw;
+    right: 0;
+    margin: 2vh 2vw 0 0;
 
     > div {
         width: 30px;
@@ -176,7 +176,6 @@ body {
 
 .card-circle:hover {
     background-color: white;
-   
 }
 
 .title {
@@ -200,7 +199,6 @@ body {
     ;
 
     @include mobile {
-    
         // flex-direction: row-reverse;
     }
 }
@@ -208,9 +206,7 @@ body {
 .x {
     color: $ltgrey;
     font-size: 4rem;
-    right: 0;
-    margin: 10px 10px 0 0;
-    position: absolute;
+    margin: 10px 10px;
 
     @include mobile {
         font-size: 2rem;
