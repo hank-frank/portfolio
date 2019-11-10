@@ -2,7 +2,7 @@
     {
         "key": 1,
         "title": "CCC",
-        "description": "A React site created for the Creating Coding Careers, a non-profit in San Diego. I contributed the design and layout, created the wireframe, the responsive navigation bar, the SVG images that serve as transitions between sections, the mobile vs. web sizing and formatrting, and accessabilty.",
+        "description": "A React site created for the Creating Coding Careers, a non-profit in San Diego. I contributed the design and layout, created the wireframe, the responsive navigation bar, the SVG images that serve as transitions between sections, the mobile vs. web sizing and formatting, accessabilty, and a number of the pages themselves.",
         "github": "",
         "hosted": "https://www.creatingcodingcareers.org/", 
         "images":[
@@ -20,7 +20,7 @@
     {
         "key": 2,
         "title": "Hacker News",
-        "description": "A React/hooks site using the Hacker News API to build a basic custom Hacker News reader. It uses async/await and promise.all to handle the async calls and Sass(scss) to do the styling.  ",
+        "description": "A React/hooks site using the Hacker News API to build a basic custom Hacker News reader. It uses async/await and promise.all to handle the async calls and Sass(scss) to do the styling. It implements pagination using hooks and async calls to populate the arrays used for display.",
         "github": "https://github.com/hank-frank/hacker-news-reader",
         "hosted": "https://hf-hacker-news.herokuapp.com",
         "images": [
@@ -38,7 +38,7 @@
     {
         "key": 3,
         "title": "To Do",
-        "description": "A React to-do app. It uses Bootstrap",
+        "description": "A  class based React to-do app. It has CRUD functinality for it's local state object. It uses Bootstrap for styling",
         "github": "https://github.com/hank-frank/react-100-vstda",
         "hosted": "https://hf-reac100t-vstda.herokuapp.com/#",
         "images": [
@@ -74,7 +74,7 @@
     {
         "key": 6,
         "title": "Weather",
-        "description": "A React/Redux/Bootstrap weather app. It hits the Open Weather API and allows the user to search by city for weather information. It locally caches the search history.",
+        "description": "A React/Redux/Bootstrap weather app. It hits the Open Weather API and allows the user to search by city for weather information. It locally caches search history info.",
         "github": "https://github.com/hank-frank/react200-weather-app",
         "hosted": "https://hf-weather-app.herokuapp.com/",
         "images": [

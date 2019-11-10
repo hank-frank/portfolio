@@ -20,6 +20,7 @@ class App extends Component {
 
         this.makeVisible = this.makeVisible.bind(this);
         this.hideVisibility = this.hideVisibility.bind(this);
+        this.isArrow = this.isArrow.bind(this);
         this.ref1 = React.createRef();
         this.ref2 = React.createRef();
         this.ref3 = React.createRef();
@@ -80,13 +81,11 @@ class App extends Component {
         }
     }
 
-    // visibilityWatcher (status) {
-    //     if (status === false) {
-    //         return "none"
-    //     } else if (status === true) {
-    //         return "block"
-    //     }
-    // }
+    isArrow () {
+        if (this.state.visibleArray.length > 0) {
+            return "arrow-down"
+        } 
+    }
 
     render () {
         return (
@@ -115,6 +114,7 @@ class App extends Component {
                     })
                 }
                 </div>
+                <div className={ this.isArrow() }></div>
                 {
                     this.state.visibleArray.map((each) => {
                     return         <div className="project-visibility-container" id={ each.key } key={ each.key } ref={ each.ref }>
