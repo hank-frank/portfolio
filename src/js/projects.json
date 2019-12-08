@@ -19,6 +19,28 @@
     },
     {
         "key": 2,
+        "title": "Cocktail",
+        "description": "A React site using Hooks, Parcel and Sass. It hits the 'CocktailDB' API to allow a user to search for cocktail recipes by ingredient, for a single random cocktail or a random 10. It keeps track of the history of what a user views as well as allowing them to add recipes to a favorites list. It lets a user input their own cocktail recipe and stores it in local state and is in the process of being connected to a mySQL database to persist that information and make it available from user to user.",
+        "github": "https://github.com/hank-frank/cocktail",
+        "hosted": "https://hf-cocktails.herokuapp.com/", 
+        "images":[
+            {
+                "image": "../assets/cocktail.png",
+                "key": 1
+            },
+            {
+                "image": "../assets/cocktail-2.png",
+                "key": 2
+            },
+            {
+                "image": "../assets/cocktail-3.png",
+                "key": 2
+            }
+        ],
+        "isVisible": false
+    },
+    {
+        "key": 3,
         "title": "Hacker News",
         "description": "A React/hooks site using the Hacker News API to build a basic custom Hacker News reader. It uses async/await and promise.all to handle the async calls and Sass(scss) to do the styling. It implements pagination using hooks and async calls to populate the arrays used for display.",
         "github": "https://github.com/hank-frank/hacker-news-reader",
@@ -36,7 +58,7 @@
         "isVisible": false
     },
     {
-        "key": 3,
+        "key": 4,
         "title": "To Do",
         "description": "A  class based React to-do app. It has CRUD functinality for it's local state object. It uses Bootstrap for styling",
         "github": "https://github.com/hank-frank/react-100-vstda",
@@ -47,7 +69,7 @@
         "isVisible": false
     },
     {
-        "key": 4,
+        "key": 5,
         "title": "YLD",
         "description": "A login portal for Yellow Line Digtial Marketing. As a team we implimented single sign on through One-Login, Loopback and MongoDB. After implimenting the new login we migrated the full functionality of their customer facing site ensuring all functionality. I ensured that with a successful login pertanent customer or admin information is passed from server to client side for user dependant site rendering and adjusted role based permissions to allow only admins to create and delete users.",
         "github": "",
@@ -61,7 +83,7 @@
         "isVisible": false
     },
     {
-        "key": 5,
+        "key": 6,
         "title": "Hair",
         "description": "A static display site for Hairstylist Sarah Vaughan. It has links to her booking platforn, imbeded maps, photos of her work and descriptions of her services. It is mobile responsive using Sass, media queries and flex-box.",
         "github": "https://github.com/hank-frank/sarah-site",
@@ -72,7 +94,7 @@
         "isVisible": false
     },
     {
-        "key": 6,
+        "key": 7,
         "title": "Weather",
         "description": "A React/Redux/Bootstrap weather app. It hits the Open Weather API and allows the user to search by city for weather information. It locally caches search history info.",
         "github": "https://github.com/hank-frank/react200-weather-app",
