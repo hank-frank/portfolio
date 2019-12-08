@@ -84,7 +84,7 @@ class App extends Component {
                     <div className="each-contact"><a href="https://www.linkedin.com" target="_blank" title="LinkedIn" className="linkedin" ><FaLinkedinIn /></a></div>
                     <div className="each-contact"><a href="mailto:henryfrank@gmail.com" target="_blank" title="email" className="email" ><FaEnvelopeSquare /></a></div>
                     <div className="each-contact"><a href="https://github.com/hank-frank?tab=repositories" target="_blank" title="github-top" className="github-top" ><FaGithubSquare /></a></div>
-                    <div className="each-contact"><a href="https://drive.google.com/file/d/10-xiVhWQ-5aofSNWifB_BAXv7o2EZBZ3/view?usp=sharing" target="_blank" title="resume" className="resume" >Resume</a></div>
+                    <div className="each-contact"><a href="https://drive.google.com/file/d/1adI01THd55IVlqbxiNmRV--xMshGa4Eq/view?usp=sharing" target="_blank" title="resume" className="resume" >Resume</a></div>
                 </div>
                 <div className="flex-container-vertical">
                     <img src={ require("../assets/me-face.png") } className="portrait-img"/>
