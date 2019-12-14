@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
-import App from './App';
-import Test from './Test'
+
+import Main from './Main'
 
 import '../css/custom.scss';
 
-render(<Test />, document.getElementById('root'));
+render(<Main />, document.getElementById('root'));
